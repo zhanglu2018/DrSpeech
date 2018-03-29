@@ -6,7 +6,6 @@ C:\Users\zhanglu\Desktop\DrSpeech\DrSpeech\obj\Debug\MainWindow.g.cs
 C:\Users\zhanglu\Desktop\DrSpeech\DrSpeech\obj\Debug\Pages\Main.g.cs
 C:\Users\zhanglu\Desktop\DrSpeech\DrSpeech\obj\Debug\Pages\Products.g.cs
 C:\Users\zhanglu\Desktop\DrSpeech\DrSpeech\obj\Debug\App.g.cs
-C:\Users\zhanglu\Desktop\DrSpeech\DrSpeech\obj\Debug\DrSpeech_Content.g.cs
 C:\Users\zhanglu\Desktop\DrSpeech\DrSpeech\obj\Debug\DrSpeech_MarkupCompile.cache
 C:\Users\zhanglu\Desktop\DrSpeech\DrSpeech\obj\Debug\DrSpeech_MarkupCompile.lref
 C:\Users\zhanglu\Desktop\DrSpeech\DrSpeech\obj\Debug\MainWindow.baml
@@ -17,5 +16,5 @@ C:\Users\zhanglu\Desktop\DrSpeech\DrSpeech\obj\Debug\DrSpeech.Properties.Resourc
 C:\Users\zhanglu\Desktop\DrSpeech\DrSpeech\obj\Debug\DrSpeech.csproj.GenerateResource.Cache
 C:\Users\zhanglu\Desktop\DrSpeech\DrSpeech\obj\Debug\DrSpeech.exe
 C:\Users\zhanglu\Desktop\DrSpeech\DrSpeech\obj\Debug\DrSpeech.pdb
-C:\Users\zhanglu\Desktop\DrSpeech\DrSpeech\obj\Debug\Resource\ResDictionary\Button.g.cs
 C:\Users\zhanglu\Desktop\DrSpeech\DrSpeech\obj\Debug\Resource\ResDictionary\Button.baml
+C:\Users\zhanglu\Desktop\DrSpeech\DrSpeech\obj\Debug\App.baml

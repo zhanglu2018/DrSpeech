@@ -58,9 +58,6 @@
     <Compile Include="Pages\Products.xaml.cs">
       <DependentUpon>Products.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Resource\ResDictionary\Button.xaml.cs">
-      <DependentUpon>Button.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -123,8 +120,34 @@
     <Folder Include="Resource\Images\Button\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resource\Images\photo - 复制.png" />
-    <Content Include="Resource\Images\photo.png" />
+    <Resource Include="Resource\Images\About-Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\small-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\HeartIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\TutorialIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\AssessmentIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\CommunityIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\HomeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\SearchIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\Divider.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

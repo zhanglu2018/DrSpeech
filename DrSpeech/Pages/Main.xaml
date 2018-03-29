@@ -14,26 +14,23 @@
                 <ColumnDefinition Width="312"/>
                 <ColumnDefinition Width="1608" />
             </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="78.75"/>
-                <RowDefinition Height="1001.25"/>
-            </Grid.RowDefinitions>
-            <Viewbox  Grid.Row="0" Grid.Column="0">
-                <Grid Background="#43425D" Height="78.75" Width="312" >
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="78.75"/>
+                    <RowDefinition Height="1001.25"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Background="#43425D" Height="78.75" Width="312" >
                     <Border  Height="78.75" Width="312" Background="#000000" Opacity="0.1" ></Border>
                     <Label Width="253" FontSize="23" HorizontalContentAlignment="Center" Foreground="#FFFFFF" Margin="24,20,35,20" Content="Dr. Speech Online"/>
                 </Grid>
-
-            </Viewbox>
-            <Viewbox Grid.Row="1" Grid.Column="0">
-                <Grid Background="#43425D" Height="1001.25" Width="312">
+                <Grid Grid.Row="1" Background="#43425D" Height="1001.25" Width="312">
                     <Border Name="imgBorder" Margin="82.4,43,81,809"  CornerRadius="50,50,50,50" >
                         <Border.Background>
                             <ImageBrush>
                                 <ImageBrush.ImageSource>
                                     <DrawingImage>
                                         <DrawingImage.Drawing>
-                                            <ImageDrawing ImageSource="../Resource/Image/photo.png" Rect="100,200,110,100"></ImageDrawing>
+                                            <ImageDrawing ImageSource="/Resource/Images/photo.jpg" Rect="100,200,110,100"></ImageDrawing>
                                         </DrawingImage.Drawing>
                                     </DrawingImage>
                                 </ImageBrush.ImageSource>
@@ -41,37 +38,49 @@
                         </Border.Background>
 
                     </Border>
-                    <Label FontSize="15" Foreground="#FFFFFF" Content="John Doe"  Margin="109,215,123,759.25"/>
+                    <Border Margin="109,203,123,770" Height="27" Width="148">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="48" />
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" FontSize="16" Foreground="#FFFFFF" Content="John Doe" />
+                            <Image Grid.Column="1" Source="/Resource/Images/small-down.png" Height="13" Width="13.2" ></Image>
+                        </Grid>
+
+
+                    </Border>
+
 
                     <ListBox  Background="#43425D" Height="700" Width="312" Margin="0,300,0,402">
-                        <ListBoxItem Height="59.62" Width="312" >
-                            <StackPanel Orientation="Horizontal" Height="28" Width="302">
-                                <Image ></Image>
-                                <Label Width="100" FontSize="15" Foreground="#FFFFFF" Margin="63,0,172,0" Content="Dashboard" />
+                        <ListBoxItem Height="60" Width="312" >
+                            <StackPanel Orientation="Horizontal" Height="19" Width="302" >
+                                <Image Source="/Resource/Images/HomeIcon.png" Height="19" Width="28" Margin="15,0,10,0" Stretch="UniformToFill" />
+                                <Label Width="77" FontSize="14" Foreground="#FFFFFF" Margin="9,0,172,0" Content="Dashboard" Padding="0,0,0,0"/>
                             </StackPanel>
                         </ListBoxItem>
                         <ListBoxItem Height="59.62" Width="312" >
-                            <StackPanel Orientation="Horizontal" Height="28" Width="302">
-                                <Image ></Image>
-                                <Label Width="100" FontSize="15" Foreground="#FFFFFF" Margin="63,0,172,0" Content="Products" />
+                            <StackPanel Orientation="Horizontal" Height="19" Width="302">
+                                <Image Source="/Resource/Images/HeartIcon.png" Height="19" Width="28" Margin="15,0,10,0" Stretch="UniformToFill" />
+                                <Label Width="77" FontSize="14" Foreground="#FFFFFF" Margin="9,0,172,0" Content="Products" Padding="0,0,0,0" />
                             </StackPanel>
                         </ListBoxItem>
                         <ListBoxItem Height="59.62" Width="312" >
-                            <StackPanel Orientation="Horizontal" Height="28" Width="302">
-                                <Image ></Image>
-                                <Label Width="100" FontSize="15" Foreground="#FFFFFF" Margin="63,0,172,0" Content="Tutorials" />
+                            <StackPanel Orientation="Horizontal" Height="19" Width="302">
+                                <Image Source="/Resource/Images/TutorialIcon.png" Height="19" Width="28" Margin="15,0,10,0" Stretch="UniformToFill" />
+                                <Label Width="100" FontSize="15" Foreground="#FFFFFF" Margin="9,0,172,0" Content="Tutorials" Padding="0,0,0,0"/>
                             </StackPanel>
                         </ListBoxItem>
                         <ListBoxItem Height="59.62" Width="312" >
-                            <StackPanel Orientation="Horizontal" Height="28" Width="302">
-                                <Image ></Image>
-                                <Label Width="100" FontSize="15" Foreground="#FFFFFF" Margin="63,0,172,0" Content="Assessments" />
+                            <StackPanel Orientation="Horizontal" Height="19" Width="302">
+                                <Image Source="/Resource/Images/AssessmentIcon.png" Height="19" Width="28" Margin="15,0,10,0" Stretch="UniformToFill" />
+                                <Label Width="100" FontSize="15" Foreground="#FFFFFF" Margin="9,0,172,0" Content="Assessments" Padding="0,0,0,0"/>
                             </StackPanel>
                         </ListBoxItem>
                         <ListBoxItem Height="59.62" Width="312">
-                            <StackPanel Orientation="Horizontal" Height="28" Width="302">
-                                <Image ></Image>
-                                <Label Width="100" FontSize="15" Foreground="#FFFFFF" Margin="63,0,172,0" Content="Community"  />
+                            <StackPanel Orientation="Horizontal" Height="19" Width="302">
+                                <Image Source="/Resource/Images/CommunityIcon.png" Height="19" Width="28" Margin="15,0,10,0" Stretch="UniformToFill" />
+                                <Label Width="100" FontSize="15" Foreground="#FFFFFF" Margin="9,0,172,0" Content="Community" Padding="0,0,0,0"  />
                             </StackPanel>
                         </ListBoxItem>
 
@@ -79,18 +88,48 @@
 
                 </Grid>
 
-            </Viewbox>
-            <Viewbox Grid.Row="0" Grid.Column="1" >
-
-                <Grid Height="78.75" Width="1608">
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="78.75"/>
+                    <RowDefinition Height="1001.25"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Height="78.75" Width="1608">
                     <Border  Height="78.75" Width="1608" Background="#A4AFB7" Opacity="0.31" ></Border>
-                    <Border  Height="78.75" Width="1608" Background="#FFFFFF" Opacity="0.27" ></Border>
+                    <Border  Height="78.75" Width="1608" Background="#FFFFFF" Opacity="0.27" >
+                      
+                    </Border>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="57.2"/>
+                            <ColumnDefinition Width="1355"/>
+                            <ColumnDefinition Width="36"/>
+                            <ColumnDefinition Width="55"/>
+                            <ColumnDefinition Width="55"/>
+                            <ColumnDefinition Width="56"/>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0">
+                            <Image Source="/Resource/Images/SearchIcon.png"></Image>
+                        </Border>
+                        <Border Grid.Column="1">
+                           
+                        </Border>
+                        <Border Grid.Column="2">
+                            <Image Source="/Resource/Images/Divider.png" Stretch="UniformToFill"></Image>
+                        </Border>
+                        <Border Grid.Column="3">
+                            <Image Source="/Resource/Images/SearchIcon.png"></Image>
+                        </Border>
+                        <Border Grid.Column="4">
+                            <Image Source="/Resource/Images/SearchIcon.png"></Image>
+                        </Border>
+                        <Border Grid.Column="5">
+                            <Image Source="/Resource/Images/SearchIcon.png"></Image>
+                        </Border>
+                    </Grid>
+
                 </Grid>
-
-            </Viewbox>
-            <Viewbox Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" >
-
-                <Grid Height="1001.75" Width="1608">
+                <Grid Grid.Row="1" Height="1001.75" Width="1608">
                     <Border  Height="1001.75" Width="1608" Background="#A4AFB7" Opacity="0.31" ></Border>
                     <Label FontSize="28" Foreground="#000000" Margin="59,41,1186,910" Content="Measurement &amp; Training" FontWeight="Bold" />
 
@@ -101,30 +140,12 @@
                         <TextBlock TextWrapping="Wrap" Text="Guides Voice Disorders Measures hoarse, harsh and breathy voice." HorizontalAlignment="Center" VerticalAlignment="Center" Width="161" />
                     </Label>
                     <Label Height="24" Width="178" Foreground="#000000" Margin="280,281,1150,696.75"  HorizontalContentAlignment="Center" Content="Real Speech"></Label>
-                    <Button Height="31" Width="88" Margin="245,408,1275,562.75" RenderTransformOrigin="0.515,1.34">
-                        <Button.Template  >
-                            <ControlTemplate TargetType="{x:Type Button}" >
-                                <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="0" CornerRadius="5,5,5,5"  Background="#A5A4BF" >
-                                </Border>
-                            </ControlTemplate>
-                        </Button.Template>
-                    </Button>
-                    <Button Height="31" Width="88" Background="#A5A4BF" Margin="409,407,1111,563.75" RenderTransformOrigin="0.515,1.34" >
-                        <Button.Template >
-                            <ControlTemplate TargetType="{x:Type Button}" >
-                                <Border BorderBrush="{TemplateBinding Control.BorderBrush}" BorderThickness="0" CornerRadius="5,5,5,5"  Background="#A5A4BF">
-                                </Border>
-                            </ControlTemplate>
-                        </Button.Template>
-                    </Button>
-
-
-
-
+                    <Button Margin="245,408,1275,562.75" Style="{StaticResource ButtonStyle_DrSpeech_Click}" Background="#A5A4BF" Content="open"></Button>
+                    <Button Margin="409,407,1111,563.75" Style="{StaticResource ButtonStyle_DrSpeech_Click}" Background="#A5A4BF"></Button>
+                    
                 </Grid>
 
-            </Viewbox>
-
+            </Grid>
         </Grid>
 
     </Viewbox>

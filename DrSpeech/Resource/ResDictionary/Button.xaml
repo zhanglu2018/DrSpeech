@@ -2,34 +2,38 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:DrSpeech.Resource.ResDictionary">
 
-    <Style x:Key="ButtonStyle_DrLanguageEvaluation_Close" TargetType="{x:Type Button}">
+    <Style x:Key="ButtonStyle_DrSpeech_Click" TargetType="{x:Type Button}">
+        <Setter Property="Width" Value="88" />
+        <Setter Property="Height" Value="31" />
+        <Setter Property="Background" Value="#ffffff"/>
+        <Setter Property="Content" Value="open"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="BorderBrush" Value="#FF2D78F4"></Setter>
+
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
-                    <Border Name="bd">
-                        <Border.Background>
-                            <ImageBrush ImageSource="../Images/Button/Close/normal.png"/>
-                        </Border.Background>
+
+                    <Border Name="bd" CornerRadius="5,5,5,5" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
+                        <TextBlock x:Name="icon"  
+                           Text="{  TemplateBinding ContentStringFormat}" 
+                           Foreground="{TemplateBinding Foreground}">
+
+                        </TextBlock>
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="true">
-                            <Setter TargetName="bd" Property="Background">
-                                <Setter.Value>
-                                    <ImageBrush ImageSource="pack://application:,,,/DrLanguageEvaluation;component/Resource/Images/Button/Close/enter.png"/>
-                                </Setter.Value>
-                            </Setter>
+
                         </Trigger>
                         <Trigger Property="IsPressed" Value="true">
-                            <Setter TargetName="bd" Property="Background">
-                                <Setter.Value>
-                                    <ImageBrush ImageSource="pack://application:,,,/DrLanguageEvaluation;component/Resource/Images/Button/Close/down.png"/>
-                                </Setter.Value>
-                            </Setter>
+                           
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+
+
     </Style>
 
 </ResourceDictionary>
